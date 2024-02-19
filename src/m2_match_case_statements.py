@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (3 pts)
+# DONE: 1. (3 pts)
 #
 #   Write a function called color_picker() that prints out a message to a user.
 #
@@ -16,9 +16,24 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def color_picker():
+    color = input("Enter the name of a color (all lowercase): ")
+    if color == "red":
+        print("Success! You picked red.")
+    elif color == "blue":
+        print("Success! You picked blue.")
+    elif color == "green":
+        print("Success! You picked green.")
+    elif color == "yellow":
+        print("Success! You picked yellow.")
+    elif color == "purple":
+        print("Success! You picked purple.")
+    else:
+        print("Unknown Color!")
+color_picker()
 
 ###############################################################################
-# TODO: 2. (3 pts)
+# DONE: 2. (3 pts)
 #
 #   Write a function called grade() that tells a student what letter grade they
 #   got on an assignment based on the percentage they indicate.
@@ -36,3 +51,19 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def grade():
+    answer = float(input("Please enter the percent of your grade (in decimal formate): "))
+    if answer >= 0.90:
+        print("Your grade is A")
+    elif answer >= 0.80:
+        print("Your grade is B")
+    elif answer >= 0.70:
+        print("Your grade is C")
+    elif answer >= 0.60:
+        print("Your grade is D")
+    elif answer < 0.60 and answer >= 0:
+        print("Your grade is F")
+    else:
+        print("Invalid Score!")
+grade()
+
